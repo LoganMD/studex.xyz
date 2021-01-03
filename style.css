@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-*{
+* {
     font-family: 'Montserrat', sans-serif;
 }
 
-main{
-    margin: 10%;
+body{
+    background: linear-gradient(to right, #488FCD, #5966AF);
 }
 
-header{
+main {
+    color: white;
+    margin: 10%;
+    text-align: center;
+    height: 100%;
+}
+
+header {
     position: absolute;
     right: 0;
     top: 0;
@@ -16,18 +23,54 @@ header{
     padding-right: 10%;
 }
 
-button{
+button {
     outline: none;
     border: none;
     font-size: 100%;
     font-weight: bold;
     padding: 14px;
-    border-radius: 0;
-    background: #fff;
-    text-decoration: underline;
+    border-radius: 0px;
+    background-color: transparent;
+    cursor: pointer;
     transition: box-shadow 0.5s ease;
+    color: white;
 }
 
-button:hover{
+button:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button.betabutton {
+    background-color: #fff;
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+span.btntxt {
+    background-image: linear-gradient(to right, #488FCD, #5966AF);
+    -webkit-background-clip: text;  
+    background-clip: text;
+    color: transparent;
+}
+
+.comingsoon {
+    filter: grayscale(100%);
+}
+
+main h1 {
+    padding-top: 10%;
+    font-size: 400%;
+}
+
+main p {
+    font-size: 150%;
+}
+
+main button span {
+    font-size: 150%;
 }
